@@ -64,7 +64,7 @@ const ChangeTitle: NextPage = () => {
       <div className={style.CenteredVertical}>
         <Stack spacing='8'>
           {[...Array(count)].map((_, index) => {
-            return (<TitleText randomized={randomized} index={index + 1}/>);
+            return (<TitleText key={index} randomized={randomized} index={index + 1}/>);
           })}
           <Stack alignItems={'center'} spacing={2.5}>
             <Divider />
