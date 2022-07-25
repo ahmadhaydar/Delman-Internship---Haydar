@@ -68,7 +68,7 @@ const Fetching: NextPage = () => {
           </Box>
           <Divider />
           <Button onClick={handleFetch} isLoading={loading}>
-            {(data == null)? 'Fetch User': 'Refetch User'}
+            {(data.name.first == '')? 'Fetch User': 'Refetch User'}
           </Button>
         </Stack>
       </div>
